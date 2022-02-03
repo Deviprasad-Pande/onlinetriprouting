@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="login.component.css">
+<body>
+  
+  <div class=".bg-image">
+     
+      
+    <img src="https://c4.wallpaperflare.com/wallpaper/800/457/280/water-beach-night-architecture-bar-maldives-1920x1080-nature-beaches-hd-art-wallpaper-preview.jpg" class="img-responsive" height="650" width="1535"> 
+    
+  </div>
+    <div class="main-container">
+      
+    <div class="container">
+    <div>
+
+      <form #f="ngForm" (ngSubmit)="login(f.value)"> 
+  <br>
+  <br>
+  
+   
+
+    <div class="form-group">
+      <!-- <div class="input-container"> -->
+        
+     
+      
+      
+      <label for="username">Username</label>
+      <br>
+      <!-- <i class="fa fa-user icon"></i> -->
+    <input type="text" class="form-control" name="username" id="username" required title="Please enter your Username here"   ngModel #u="ngModel" name="username"
+    placeholder="Enter email" required> 
+    </div>
+  <!-- </div> -->
+    
+    <div *ngIf="u.touched && u.invalid">
+
+      <span class="text-danger">UserName is Mandatory</span>
+    </div>
+    
+    <br>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" 
+      name="password"  ngModel #p="ngModel"
+      id="password" placeholder="Password" required>
+    </div>
+  
+  <div *ngIf="p.touched && p.invalid">
+    <span class="text-danger">Password is Mandatory</span>
+  </div>
+<br>
+    <div class="form-group">
+    <label for="role">Choose a role:</label>
+    <select name="role"  class="form-control" ngModel #l="ngModel" required>
+      <option value="" disabled>Select the role</option>
+      <option value="admin">Admin</option>
+      <option value="customer">Customer</option>
+      <option value="merchant">Merchant</option>
+      </select>
+    </div>
+
+    <div *ngIf="l.touched && l.invalid">
+
+      <span class="text-danger">Please Choose a Role</span>
+    </div>
+
+<br>
+    
+
+
+      <input type="submit" value="Login" class="btn btn-primary btn-lg" />  
+      <!-- <button class="btn btn-primary">Logi</button> -->
+      <br>
+      <h6 for="role">If you are new here Please Sign up..!!</h6> 
+      <br>
+      <button class="btn btn-success" routerLink="/signup">Signup For Customer</button>
+ <br>
+ <button class="btn btn-success" routerLink="/signup-merchant">Signup For Merchant</button>
+    </form>
+    
+    
+    
+     
+ <!-- <input type="submit" value="SignUp" class="button-btn" routerLink="/signup">  -->
+    
+    </div>
+    
+    </div>
+    
+  </div>
+    
+  </body>
+    

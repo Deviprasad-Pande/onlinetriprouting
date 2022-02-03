@@ -1,5 +1,5 @@
 <br>
-<h2>Welcome Merchant to Dashboard<h2>
+<h2>Welcome Customer to Dashboard<h2>
 
 <br>
 <br>
@@ -22,13 +22,11 @@
                 <div class="card mt-3">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                            <h4 class="mb-0">Edit Info</h4>
+                           
                             <span class="text-secondary">
                                 <!-- Anchor trigger modal -->
                                 <a style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
-                                    <span class="material-icons" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        edit
-                                    </span>
+                                  
                             </a>
 
 
@@ -39,12 +37,14 @@
                         
                        
                         <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                            <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe mr-2 icon-inline">
-                                    
+                            <h6  href="src\app\package\package.component.html" class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe mr-2 icon-inline">
                                     
                                    
                                 </svg></h6>
-                                <button class="btn btn-success" routerLink="/package-merchant">Show all Package</button>
+                                <!-- <a href="src\app\package\package.component.html">Show all Packages</a>  -->
+
+                                <button class="btn btn-success" routerLink="/package">Show all Package</button>
+
                         </li>
                     </ul>
                 </div>
@@ -54,16 +54,16 @@
                     <div class="card-body">
                         <div class="row">
                             
-                                <h6 class="mb-0">Merchant Name : Sameeksha Shetty</h6>
-                         
+                                <h6 class="mb-0">Customer Name : Deviprasad Pandey</h6>
+                            
                             <div class="col-sm-9 text-secondary">
                                 
                             </div>
                         </div>
                         <hr>
                         <div class="row">
-                           
-                                <h6 class="mb-0">Email ID: samee@gmail.com </h6>
+                          
+                                <h6 class="mb-0">Email ID: dp@gmail.com </h6>
                             
                             <div class="col-sm-9 text-secondary">
                               
@@ -72,7 +72,7 @@
                         <hr>
                         <div class="row">
                             
-                                <h6 class="mb-0">Mobile No. : 8745612345</h6>
+                                <h6 class="mb-0">Mobile No. : 8600112908</h6>
                             
                             <div class="col-sm-9 text-secondary">
                                
@@ -81,8 +81,8 @@
 
                         <hr>
                         <div class="row">
-                           
-                                <h6 class="mb-0">Address : Shetty Tower,Sinhgad Road, Dubai </h6>
+                          
+                                <h6 class="mb-0">Address : Shaitan Haveli, Andheri east, Mumbai </h6>
                            
                             <div class="col-sm-9 text-secondary">
                                
@@ -96,7 +96,8 @@
 </div>
 
 <br>
-
+<!-- <button type="button" class="btn btn-dark" routerLink="/delete-customer">Delete Profile</button> -->
+<!-- <button type="button" class="btn btn-dark btn-lg" routerLink="/delete-customer" data-toggle="modal" data-target="#myModal">Delete Profile</button> -->
 
 <button class="btn btn-danger" onclick="document.getElementById('id01').style.display='block'">Delete Profile</button>
 
@@ -136,5 +137,7 @@
     </div>
   </form>
 </div>
+
+
 
 
